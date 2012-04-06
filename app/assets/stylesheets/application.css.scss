@@ -1,0 +1,65 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+*/
+header#banner{
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  border-bottom: 3px solid #00EBFF;
+  margin: 25px; 
+}
+section#main{
+  min-height: 200px;
+  min-width: 1000px;
+  margin-left: 160px;
+}
+footer#footer{
+  color: white;
+  background: url(http://static.tumblr.com/silmimt/oAglyhp58/header.png) repeat-x #DADDDD;
+  min-height: 50px;
+  width: 860px;
+  margin-left: 160px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  p{
+    padding: 10px;
+  }
+}
+nav{                       
+  position: fixed;
+  
+  .link{
+    color: #4D4D4D;
+    line-height: 18px;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.9);
+    background: url(http://static.tumblr.com/z7lhmdl/DsSkwsstm/gradbg.png) repeat-x #DADDDD;
+    border-bottom: 1px solid #C5C8C8;
+    a{
+      font-weight: 500;
+      text-decoration: none;
+      color: #4D4D4D;
+      display: block;
+      padding: 20px;
+      font-size: 20px;
+      text-transform: uppercase;
+      text-shadow: 0 2px 1px rgba(255, 255, 255, 0.9);
+    }    
+  }
+  .top{
+    border-top-right-radius: 10px;
+  }
+  .bottom{
+    border-bottom-right-radius: 10px;
+  }
+}

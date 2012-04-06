@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %title Pragtechnologies
+    = stylesheet_link_tag    "application", :media => "all"
+    = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Aldrich&subset=latin"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    %header#banner
+      %h1 PragTechnologies    
+    %nav
+      .link.top= link_to 'HOME', '/'
+      .link= link_to 'ABOUT', '/About'
+      .link.bottom= link_to 'BLOG', 'http://blog.pragtechnologies.com'    
+    %section#main
+      = yield
+    %footer#footer
+      %p Copyright by Noel del Castillo

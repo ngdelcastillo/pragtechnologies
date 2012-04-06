@@ -1,4 +1,9 @@
 Pragtechnologies::Application.routes.draw do
+  #Set the route for Home
+  resources :home
+  #Set home as root
+  root :to => 'home#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
