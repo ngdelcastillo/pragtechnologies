@@ -3,17 +3,53 @@
   %head
     %title Pragtechnologies
     = stylesheet_link_tag    "application", :media => "all"
-    = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Aldrich&subset=latin"
+    = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Annie Use Your Telescope&subset=latin"
+    = stylesheet_link_tag "http://fonts.googleapis.com/css?family=Amatic SC&subset=latin"
     = javascript_include_tag "application"
-    = csrf_meta_tags
+    = csrf_meta_tag
   %body
     %header#banner
-      %h1 PragTechnologies    
+      = image_tag "thinking-space-icon.png"
+      .banner
+        %h1 PragTechnologies
+        %span making things easier through technology
+    .menu
     %nav
-      .link.top= link_to 'HOME', '/'
-      .link= link_to 'ABOUT', '/About'
+      .link.top= link_to 'HOME', '#', :onclick => "$.scrollTo('#home_header',200); return false;"
+      .link= link_to 'ABOUT', '#', :onclick => "$.scrollTo('#about_header',200); return false;"
       .link.bottom= link_to 'BLOG', 'http://blog.pragtechnologies.com'    
     %section#main
-      = yield
+      = yield             
+    .credentials
+      .follow_me
+        %h3= "Follow me"
+        .social
+          = link_to image_tag('facebook-icon.png'), 'http://www.facebook.com/ngdelcastillo'
+          %span= "Facebook"
+        .social          
+          = link_to image_tag('gplus-icon.png'), 'https://plus.google.com/u/0/101288798735908309027/posts' 
+          %span= "Google +"
+        .social          
+          = link_to image_tag('twitter-2-icon.png'), 'https://twitter.com/#!/ngdelcastillo' 
+          %span= "Twitter"
+        .social          
+          = link_to image_tag('Delicious-icon.png'), 'https://delicious.com/ngdelcastillo' 
+          %span= "Delicious"
+        .social          
+          = link_to image_tag('github-icon.png'), 'https://github.com/ngdelcastillo' 
+          %span= "GitHub"
+        .social          
+          = link_to image_tag('linkedin-icon.png'), 'http://www.linkedin.com/profile/view?id=3756634&trk=tab_pro' 
+          %span= "LinkedIn"
+      .contact_me
+        %h3= "Contact me"
+        .contact
+          = image_tag 'mail-icon.png' 
+          %span= "Email: ngdelcastillo@gmail.com"
+        .contact
+          = image_tag 'Skype-icon.png' 
+          %span= "Skype: noel.del.castillo"
+          
+            
     %footer#footer
       %p Copyright by Noel del Castillo

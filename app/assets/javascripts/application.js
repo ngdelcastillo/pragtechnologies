@@ -13,3 +13,23 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+var slider = ['Info', 'Profession', 'Education', 'Books'];
+function formatText(index, panel){
+  return slider[index -1];
+}
+
+$(function(){
+  $('#slider1').anythingSlider({
+    width               : 600,       // if resizeContent is false, this is the default width if panel size is not defined
+	height              : 350,       // if resizeContent is false, this is the default height if panel size is not defined
+	resizeContents      : false,     // If true, solitary images/objects in the panel will expand to fit the viewport
+	autoPlay            : false,     // This turns off the entire slideshow FUNCTIONALY, not just if it starts running or not
+	navigationFormatter : formatText // Format navigation labels with text
+  });
+
+  $("#slide-jump").click(function(){
+    $('#slider1').anythingSlider(3);
+    return false;
+  });
+});

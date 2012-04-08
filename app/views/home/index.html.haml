@@ -1,8 +1,10 @@
 %section.entry#home
+  %header#home_header
+    %h2= "HOME"
   %article
     %p= "Welcome to Pragtechnologies!"
-    %p= "This is my personal website about my technology adventures. Pragtechnologies basically stands for Pragmmatic Techonologies. "
-    %p= "Pragmmatic means:"
+    %p= "This is my personal website about my technology adventures. Pragtechnologies basically stands for Pragmatic Techonologies. "
+    %p= "Pragmatic means:"
     %ul
       %li= "Technology directly solves the problem"
       %li= "Technology is easy to implement"
@@ -16,11 +18,72 @@
     %p= "I created this site through the inspiration of my family, Technology Management degree, and www.pragprog.com."
     %p= "This site is built using Ruby on Rails, HAML, SASS, and HTML5."
 %section.entry#about
-  %header
+  %header#about_header
     %h2= "NOEL DEL CASTILLO - MTM (Masters in Technology Management)"
   %article#about
-    #1.content
-      %p= "I'm a software engineer, technologist, and a family man. I'm a husband to my beautiful wife, a father of two sons, and I put my family first more than anything else."
-      %p= "I love my profession. I'm passionated with computers since I was a child."
-    #1.image
-      = image_tag "rails.png"
+    %ul#slider1.anythingBase
+      %li.panel1.panel
+        .textSlide
+          #1.image
+            = image_tag "family.jpg"
+          #1.content
+            %p= "I'm a software engineer, technologist, and a family man. I'm a husband to my beautiful wife and a father of two sons. I put my family first more than anything else."
+            %p= "Born in the Philippines and grew in the wonderful city of Marikina, I can say I'm a proud Filipino. I'm currently 29 year's old. I love computers, photography, and cooking. My usual daily routine during weekdays are to go to work (8-10 hours), fight the daily trafic between Marikina and Makati (2-4 hours), play with my kids(1-2 hours), and play programming, do some side-line tasks or play games with my computer (2-6 hours). In the weekends, I either, do full time side-line work or just relax in the house like watching downloaded movies with my wife and go to the groceries."
+      %li.panel2.panel
+        .textSlide
+          #2.image
+            = image_tag "office.jpg"
+            %aside= "Office Station"
+            = image_tag "home.jpg"
+            %aside= "Home Station"
+          #2.content
+            %p= "Programming is my passion and my profession. I've been working as a Software Engineer for more than 7 years. Most of the things I do are both frontend and backend development. The technology I've been working on is .Net. In the frontend, I had experienced with ASP.Net, ASP MVC3, CSS, Javascript, and WPF. While in the backend, I used C#, WCF, Entity Framework, and MySQL. I can say I'm well rounded with each layers of development."
+            %p= "If you'll notice, my work experience is all about .Net which is Microsoft technology. One simple reason -> thats just my first work experience. And if you are to grow your career in the IT industry, it usually a one road path. I'm currently a Lead developer in NNIT. I handle at least 5 developers in a project. We practice Agile Methodologies using SCRUM approach. I lead through planning, mentoring and monitoring. I always maximize the tools I could get to improve our team performance like using Sharepoint sites and Telerik Work Item Manager for TFS (Team Foundation Server). I'm doing semi Project Management tasks by conducting daily SCRUM meetings and monitoring burn down charts of every work items. I'm interested in taking Project Management position since I like handling people and planning but I don't want to stop programming. They say you can't mix both position but I think otherwise. I believe having the technical vision and knowledge on Technology management can better manage the project as a whole."
+            %p= "Now wait. I did say programming is my passion and profession. Which is why I don't want to limit myself with .Net technologies. I can't call myself a programmer if I can't cook using a different stove. On the side, I'm also programming using Open Source technologies. I have experience with Ruby, Ruby on Rails, PostgreSQL, RSpec & Cucumber, HAML, and SASS. Most of these are web technologies which is now incorporated in the best web programming practices. So what are best web practices? These are TDD(test driven development) combined with BDD(Behavioral Driven Development), and DRY(Don't Repeat Yourself)."
+      %li.panel3.panel
+        .textSlide
+          #3.image
+            = image_tag "up_tmc.jpg"
+            %aside= "Our UP Graduation"
+            = image_tag "dbtc.jpg"
+            %aside= "My thesis group in Don Bosco"
+          #3.content
+            %p= "Stay Hungry. Stay Foolish. A quote comming from a famous person that inspired me to always strive for knowledge."
+            %aside= "Post-Graduate:"
+            %p= "I graduated with a post-graduate degree of Masters in Technology Management in the University of the Philippines. The knowledge I acquired from this degree are: Technology Acquisition, Strategic Planning, R&D Management, Intellectual Property, Technology Quality Management (ISO & Lean Six Sigma), Marketing, Financial Analysis (Stock Market), Project Management, Technology Entrepreneurship, and Knowledge Management. My thesis is about a business plan on providing Virtual Tour technology as a service for the real estate industry. I spend 3 years on this course."
+            %aside= "College:"
+            %p= "I graduated with a bachelor degree in Computer Engineering in Don Bosco Technical College. The knowledge I acquired from this degree are: Software Engineering, Programming, Robotics, Microprocessors and Electronics. Our thesis is about creating a device that will provide Home Automation using a flow chart based program. This was built using Infrared Sensors, Electronic circuit, and Java programming. I spend 5 years on this course."
+            %aside= "Basic Education:"
+            %p= "I graduated High School and Grade School at Marist School. The knowledge I acquired are the usual basic skills that I need to go to college. One of the memorable moments of my younger days in Marist is my experience as a Baseball varsity player. This is where I learned the value of hardship and teamwork. Despite the hard practices that we had, we were able to prove to everyone that we did became champions of our days."
+      %li.panel4.panel
+        .textSlide
+          #4.content
+            %aside= "\"Tell me the books you read, and I will tell you who you are.\""
+          #4.gallery
+            .frame
+              = image_tag "book_strengths.jpg"
+              %aside= "blah blah"
+            .frame
+              = image_tag "strengths_based_leadership.jpg"
+              %aside= "blah blah"
+            .frame
+              = image_tag "8habit.jpg"
+              %aside= "blah blah"
+            .frame
+              = image_tag "rails4.jpg"
+              %aside= "blah blah"
+            .frame
+              = image_tag "html5.jpg"
+              %aside= "blah blah"
+            .frame
+              = image_tag "pg_js.jpg"
+              %aside= "blah blah"
+            .frame
+              = image_tag "rspec.jpg"
+              %aside= "blah blah"
+            .frame
+              = image_tag "ruby3.jpg"
+              %aside= "blah blah"
+            .frame
+              = image_tag "agile.jpg"
+              %aside= "blah blah"

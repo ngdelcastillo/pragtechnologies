@@ -12,39 +12,112 @@
  *= require_tree .
 */
 header#banner{
+  /*font-family: Amatic SC, Arial; */
   color: white;
-  text-transform: uppercase;
   font-size: 20px;
-  border-bottom: 3px solid #00EBFF;
-  margin: 25px; 
+  background-color: #232323;
+  border-bottom: 1px solid #151515; 
+  padding: 20px 150px;
+  
+  img{
+    height: 60px;
+    width: 60px;
+    float: left;
+  }
+
+  h1{
+    margin: 0;
+    font-size: 40px;
+    font-weight: normal;
+    vertical-align: top;
+    padding-left: 10px;
+  }
+
+  span{
+    padding-left: 40px;
+    font-size: 20px;
+  }
+}
+.menu{
+  height: 20px;
+  background-color: #333;
+  border-top: 1px solid #383838;
+  border-bottom: 1px solid #444;
 }
 section#main{
   min-height: 200px;
   min-width: 1000px;
   margin-left: 160px;
+  margin-top: 10px;
 }
-footer#footer{
-  color: white;
-  background: url(http://static.tumblr.com/silmimt/oAglyhp58/header.png) repeat-x #DADDDD;
-  min-height: 50px;
-  width: 860px;
-  margin-left: 160px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+.credentials{
+  height: 200px;
+  background-color: #333;
+  border-top: 1px solid #383838;
+  border-bottom: 1px solid #444;
+  margin-top: 50px;
+  padding: 10px 150px;
+  min-width: 1000px;
 
-  p{
-    padding: 10px;
+  .follow_me, .contact_me{
+    float: left;
+    width: 400px;
+    margin-right: 20px;
+  }
+
+  h3{
+    color: white;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: lighter;    
+    margin: 0;
+    border-bottom: 2px solid #568FCB;
+    margin-bottom: 5px;
+  }
+  img{
+    width: 40px;
+    height: 40px;
+  }
+  span{
+    vertical-align: top;
+    font-size: 20px;
+    color: white;
+  }
+  .social{
+    padding-left: 10px;
+    float: left;
+    width: 120px;
+  }
+  .contact{
+    width: 250px;
+    padding-left: 10px;
   }
 }
-nav{                       
+
+footer#footer{
+  color: white;
+  /*background: url(http://static.tumblr.com/silmimt/oAglyhp58/header.png) repeat-x #DADDDD; */
+  background-color: #232323;
+  border-bottom: 1px solid #151515; 
+  min-height: 50px;
+  margin-top: -16px;
+
+  p{
+    padding: 5px;
+    text-align: center;
+  }
+}
+nav{
+  /*font-family: Amatic SC, Arial; */
   position: fixed;
-  
+  margin-top: 10px;
   .link{
     color: #4D4D4D;
     line-height: 18px;
     text-shadow: 0 1px 1px rgba(255, 255, 255, 0.9);
-    background: url(http://static.tumblr.com/z7lhmdl/DsSkwsstm/gradbg.png) repeat-x #DADDDD;
+    /*background: url(http://static.tumblr.com/z7lhmdl/DsSkwsstm/gradbg.png) repeat-x #DADDDD; */
     border-bottom: 1px solid #C5C8C8;
+    background-color: white;
     a{
       font-weight: 500;
       text-decoration: none;
