@@ -61,19 +61,19 @@ section.entry{
               }
             }
             .gallery{
-              height: 600px;
 
               .frame{
                 float: left;
-                width: 210px;
-                height: 300px;
-                padding: 10px;
+                width: 200px;
+                height: 350px;
+                padding: 10px 26px;
+                text-align: center;
                 img{
                   width: 200px;
                   height: 230px;
                 }
                 aside{
-                  text-align: center;
+                  display: inline;
                 }
               }
             }
