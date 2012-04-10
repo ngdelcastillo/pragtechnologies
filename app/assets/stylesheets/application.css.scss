@@ -12,7 +12,7 @@
  *= require_tree .
 */
 header#banner{
-  /*font-family: Amatic SC, Arial; */
+  font-family: 'Annie Use Your Telescope', arial, helvetica, sans-serif;
   color: white;
   font-size: 20px;
   background-color: #232323;
@@ -62,7 +62,13 @@ section#main{
   .follow_me, .contact_me{
     float: left;
     width: 400px;
-    margin-right: 20px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+  }                      
+
+  .powered_by{
+    width: 300px;
+    float: left;
   }
 
   h3{
@@ -89,8 +95,16 @@ section#main{
     width: 120px;
   }
   .contact{
-    width: 250px;
+    width: 300px;
     padding-left: 10px;
+  }
+  .provider{
+    width: 300px;
+    padding-left: 10px;
+    img{
+      width: 100px;
+      height: 25px
+    }
   }
 }
 
